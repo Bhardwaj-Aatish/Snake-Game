@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    color:white;
+    margin: 0;
+}
+
+.body{
+   background: url(gamebackground2.jpg) ;
+   background-size: 100vw 100vh;
+   min-height:100vh;
+   /* display:flex;
+   justify-content: center;
+   align-items: center; */
+}
+
+#scorebox{
+    position:absolute;
+    top:42px;
+    right:460px;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+#highscore{
+    position:absolute;
+    top:90px;
+    right:420px;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+#board{
+    position : absolute;
+    top:26px;
+    left:30px;
+    background: url('snaketry.jpg') no-repeat center center;
+    background-size: cover;
+   /* background:linear-gradient(rgb(120, 207, 120),rgb(223, 223, 122)); */
+   /* background-color: #19a325 ; */
+   width:  90vmin;
+   height:92vmin;
+   border: 7px solid rgb(218, 169, 169);
+   display: grid;
+   grid-template-columns: repeat(18,1fr);
+   grid-template-rows: repeat(18,1fr);
+   border-radius: 10px;
+   /* box-shadow: 10px 20px rgb(180, 61, 61); */
+}
+
+.head{
+    background:linear-gradient(yellow, red);
+    border-radius: 16px;
+    transform: scale(1.11);
+    border:2px solid black;
+    
+
+}
+
+.snake{
+    background:linear-gradient(rgb(94, 13, 13),black);
+    border:2px solid black;
+    border-radius:  10px;
+
+}
+.food{
+    background-color:  blue;
+    border: 2px solid black;
+    border-radius:12px;
+}
+
+
+
+/* #volume__slider{
+    height: 7px;
+    width: 200px;
+    margin-left: 10px;
+    /* appearance none is necessary to give our background radius */
+    /* appearance: none;  
+    background: var(--text);
+    border-radius: 7px;
+    outline: none;
+
+} */ 
